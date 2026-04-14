@@ -1,4 +1,4 @@
-export default function Welcome({ hero }: any) {
+export default function Welcome() {
     return (
         <div className="relative min-h-screen w-full overflow-x-hidden">
             {/* BACKGROUND */}
