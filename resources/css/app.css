@@ -2,16 +2,32 @@
 
 @import 'tw-animate-css';
 
+
 @source '../views';
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 
 @custom-variant dark (&:is(.dark *));
+
+@font-face {
+    font-family: 'Highrise';
+    src: url('/fonts/HighriseFont-Bold-Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-highrise {
+    font-family: 'Highrise', sans-serif;
+}
+
 
 @theme {
     --font-sans:
         'Instrument Sans', ui-sans-serif, system-ui, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
         'Noto Color Emoji';
+        
+    /* --font-Highrise: 'Highrise', sans-serif;     */
+
+    
 
     --radius-lg: var(--radius);
     --radius-md: calc(var(--radius) - 2px);
